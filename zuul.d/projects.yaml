@@ -16,8 +16,8 @@
     check:
       jobs:
         - linters
-        - cloud-vpn-aws-to-aws-vpn
+        - cloud-vpn-aws-to-aws
     gate:
       jobs:
         - linters
-        - cloud-vpn-aws-to-aws-vpn
+        - cloud-vpn-aws-to-aws
