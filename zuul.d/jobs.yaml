@@ -73,6 +73,8 @@
         name: container
         label: f27-oci
     semaphore: cloud-vpn-aws-to-aws-us-east-2
+    vars:
+      test_entrypoint: test_aws_csr_to_aws_vpn.yaml
 
 - job:
     name: cloud-vpn-aws-csr-to-aws-vpn-bgp
@@ -87,6 +89,8 @@
         name: container
         label: f27-oci
     semaphore: cloud-vpn-aws-to-aws-us-east-2
+    vars:
+      test_entrypoint: test_aws_csr_to_aws_vpn_bgp.yaml
 
 - job:
     name: cloud-vpn-aws-csr-to-aws-vyos
@@ -101,6 +105,8 @@
         name: container
         label: f27-oci
     semaphore: cloud-vpn-aws-to-aws-us-east-2
+    vars:
+      test_entrypoint: test_aws_csr_to_aws_vyos.yaml
 
 - job:
     name: cloud-vpn-aws-vyos-to-aws-vpn
@@ -115,6 +121,8 @@
         name: container
         label: f27-oci
     semaphore: cloud-vpn-aws-to-aws-us-east-1
+    vars:
+      test_entrypoint: test_aws_vyos_to_aws_vpn.yaml
 
 - job:
     name: cloud-vpn-aws-vyos-to-aws-vyos
@@ -129,6 +137,8 @@
         name: container
         label: f27-oci
     semaphore: cloud-vpn-aws-to-aws-us-east-1
+    vars:
+      test_entrypoint: test_aws_vyos_to_aws_vyos.yaml
 
 - job:
     name: cloud-vpn-aws-vyos-to-aws-vyos-bgp
